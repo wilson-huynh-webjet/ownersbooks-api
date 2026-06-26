@@ -1,0 +1,12 @@
+{
+  "name": "owners-books-api",
+  "version": "1.0.0",
+  "description": "Owners Books API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
