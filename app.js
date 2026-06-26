@@ -1,4 +1,6 @@
 const express = require("express");
+const getBooks = require("./services/booksService");
+
 const app = express();
 const PORT = process.env.PORT ?? 9000;
 
@@ -7,7 +9,7 @@ app.use(express.json());
 
 // GET /books endpoint
 app.get("/books", (req, res) => {
-  res.json([]);
+  res.json(getBooks());
 });
 
 app.listen(PORT, () => {
